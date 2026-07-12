@@ -36,8 +36,15 @@ nav a:hover { color: var(--text); }
 .hero h1 { font-size: 42px; font-weight: 850; letter-spacing: -0.5px; }
 .hero .tag { color: var(--muted); font-size: 18px; margin-top: 14px; }
 .hero .sub { color: var(--accent2); font-weight: 700; margin-top: 10px; }
+.store { margin-top: 28px; }
+.store-badge { height: 60px; width: auto; transition: opacity 0.15s; }
+.store a:hover .store-badge { opacity: 0.85; }
+.store-note { color: var(--muted); font-size: 13px; margin-top: 8px; }
 .cta { display: inline-block; margin-top: 26px; padding: 14px 26px; border-radius: 14px;
   background: var(--accent); color: #fff; font-weight: 700; text-decoration: none; }
+.cta.secondary { margin-top: 14px; padding: 10px 20px; background: transparent;
+  border: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+.cta.secondary:hover { color: var(--text); border-color: var(--muted); }
 
 .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 30px 0 10px; }
 .feature { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
