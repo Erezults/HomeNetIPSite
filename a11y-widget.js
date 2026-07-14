@@ -37,14 +37,15 @@
     var toggle = document.createElement("button");
     toggle.type = "button";
     toggle.className = "a11y-toggle";
-    toggle.setAttribute("aria-haspopup", "true");
+    toggle.setAttribute("aria-controls", "a11y-panel");
     toggle.setAttribute("aria-expanded", "false");
     toggle.setAttribute("aria-label", "Accessibility options");
     toggle.textContent = "♿";
 
     var panel = document.createElement("div");
     panel.className = "a11y-panel";
-    panel.setAttribute("role", "menu");
+    panel.id = "a11y-panel";
+    panel.setAttribute("role", "group");
     panel.setAttribute("aria-label", "Accessibility options");
 
     var title = document.createElement("div");
